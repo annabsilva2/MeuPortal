@@ -1,0 +1,139 @@
+/* 1. Reset Básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: palevioletred solid 1px; */
+
+}
+/* 2. Base da página */
+body{
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+/* Imagens de fundo: ESQ e DIR */
+.fundo{
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.fundo-esquerdo{
+    left: 0;
+    background-image: url('./img/criancas.png');
+
+}
+
+.fundo-direito{
+    right: 0;
+    background-image: url('./img/menina.png');
+}
+
+.login{
+    width: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255,255,255, 0.88);
+}
+/* 4. Textos */
+.login h1{
+    font-size: 17.5px;
+    font-weight: normal;
+    /* text-transform: lowercase; deixa as fontes minusculas */
+
+}
+
+.logo{
+    display: block;
+    width: 320px;
+    max-width: 100%;
+    margin: 4px auto 36px;
+}
+
+.login h2{
+    font-size: 16.3px;
+    font-weight: normal;
+    /* Alteração da largura */
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-bottom:  40px;
+}
+
+/* 5.formulario */
+/*input[type="text"],{...}
+input[type="password"]{...}*/
+
+input[type="text"],
+input[type="password"] {
+    display: block;
+    
+    /* Alteração: mesma largura da logo */
+    width: 320px;
+     margin-left: auto;
+    margin-right: auto;
+
+    padding: 14px 12px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #333;
+    background-color: rgba(255, 255, 255);
+    border: 1px solid #c8c8c8;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: 1px solid #4aa3e8;
+
+}
+
+button{
+    padding: 12px 22px;
+    /* margin: 0px 0px 20px 0px; */
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+
+    background-color: #d73220;
+    color: #fff;
+    border: none;
+
+    /* Altera para maiuscula e minuscula*/
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: gray;
+}
+
+.links{
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.links a{
+    color: #d73220;
+}
+
+p{
+    margin-bottom: 10px;
+}
+
+a{
+    color: #d73220;
+}
